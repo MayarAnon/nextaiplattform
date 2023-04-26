@@ -26,24 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4486793179399090"
-          crossOrigin="anonymous"
-        />
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              url: "https://www.aioverview.info",
-              name: "AI-Overview",
-              description:
-                " Discover the perfect AI tool for your needs with our all-in-one resource, featuring over 100 AI tools",
-            }),
-          }}
-        />
+
         <meta property="og:url" content="http://aioverview.info" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="AI-Overview" />
@@ -60,7 +43,25 @@ export default function Home() {
         />
         <meta name="twitter:image" content="/logo192.png" />
       </Head>
-
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4486793179399090"
+        crossOrigin="anonymous"
+      />
+      <Script
+        id="aiOverviewScript"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            url: "https://www.aioverview.info",
+            name: "AI-Overview",
+            description:
+              " Discover the perfect AI tool for your needs with our all-in-one resource, featuring over 100 AI tools",
+          }),
+        }}
+      />
       <main className={"main"}>
         <CardContainer />
       </main>
