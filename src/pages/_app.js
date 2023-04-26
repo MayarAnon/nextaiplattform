@@ -1,4 +1,5 @@
 // import "@/components/styles/globals.css";
+import "react-toastify/dist/ReactToastify.css";
 import { SessionProvider } from "next-auth/react";
 import Layout from "../components/Layout";
 import { Analytics } from "@vercel/analytics/react";

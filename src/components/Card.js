@@ -1,5 +1,9 @@
 import Image from "next/image";
-import { Starsrating } from "./Stars";
+import dynamic from "next/dynamic";
+
+const Starsrating = dynamic(() => import("./Stars"));
+
+// import Starsrating from "./Stars";
 const Card = ({ id, img, title, pricing, description, tasks, link }) => {
   return (
     <article className="card">
@@ -12,7 +16,7 @@ const Card = ({ id, img, title, pricing, description, tasks, link }) => {
           description={`Logo of ${title}`}
           type="image/webp"
         />
-        <Starsrating />
+        <Starsrating name={title} />
       </div>
       <div>
         <h1>{title}</h1>
