@@ -55,7 +55,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            url: "https://www.aioverview.info",
+            url: "https://nextaiplattform.vercel.app/",
             name: "AI-Overview",
             description:
               " Discover the perfect AI tool for your needs with our all-in-one resource, featuring over 100 AI tools",
