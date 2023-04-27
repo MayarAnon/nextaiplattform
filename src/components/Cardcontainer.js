@@ -8,7 +8,7 @@ function CardContainer() {
   const aiList = useSelector((state) => state.card.aiList);
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch("http://localhost:3000/api/aiList")
+    fetch("/api/aiList")
       .then((res) => res.json())
       .then((data) => dispatch(initState(data.content)));
   }, []);
