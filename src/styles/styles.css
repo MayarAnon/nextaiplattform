@@ -148,6 +148,14 @@ p {
   }
 }
 @media screen and (max-width: 799px) {
+  .starsrating .icon {
+    font-size: 1rem;
+  }
+  .starsrating svg,
+  .starsrating img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
   .loginDiv {
     max-width: var(--fixed-width);
     width: 100%;
